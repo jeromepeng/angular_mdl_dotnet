@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(15, 118, 199);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+
+  button {
+    margin: 0 8px 0 8px;
+  }
+
+  h1 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+    padding-top: 0px;
+    letter-spacing: 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    height: 64px;
+    line-height: 64px;
+    flex: 1;
+    font-family: Roboto, sans-serif;
+  }
+}
+

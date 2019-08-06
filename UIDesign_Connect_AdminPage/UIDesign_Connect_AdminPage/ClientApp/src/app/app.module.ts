@@ -11,7 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatInputModule } from '@angular/material';
+import { MatButtonModule, MatInputModule, MatTabsModule, MatSelectModule, MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -32,9 +32,12 @@ import { MatButtonModule, MatInputModule } from '@angular/material';
     ]),
     MatButtonModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule,
+    MatSelectModule,
+    MatIconModule
   ],
-  exports: [MatButtonModule, MatInputModule, BrowserAnimationsModule],
+  exports: [MatButtonModule, MatInputModule, BrowserAnimationsModule, MatTabsModule, MatSelectModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,18 +1,17 @@
-<header>
-  <nav class='navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3'>
-    <div class="container">
-      <a class="navbar-brand" [routerLink]='["/"]'>UIDesign_Connect_AdminPage</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Toggle navigation"
-        [attr.aria-expanded]="isExpanded" (click)="toggle()">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]='{"show": isExpanded}'>
-        <ul class="navbar-nav flex-grow">
-          <li class="nav-item" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
-            <a class="nav-link text-dark" [routerLink]='["/admin"]'>Admin</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+<div class="header">
+  <button mat-icon-button>
+    <mat-icon svgIcon="side-nav"></mat-icon>
+  </button>
+  <h1>Administrator Panel</h1>
+  <button mat-icon-button>
+    <mat-icon svgIcon="admin"></mat-icon>
+  </button>
+  <button mat-icon-button>
+    <mat-icon svgIcon="my-profile"></mat-icon>
+  </button>
+  <a href="/">
+    <button mat-icon-button>
+      <mat-icon svgIcon="logout"></mat-icon>
+    </button>
+  </a>
+</div>

@@ -1,8 +1,52 @@
-<button mat-raised-button color="warn">Warn</button>
-<br />
-
-<div mat-dialog-content>
-  <mat-form-field>
-    <input matInput placeholder="Device Id" required>
-  </mat-form-field>
+<div class="back-ground">
+  <br />
+  <br />
+  <div class="content">
+    <mat-tab-group>
+      <mat-tab label="Service">
+        <ng-template matTabContent>
+          <div mat-dialog-content>
+            <br />
+            <h4>Add a New Service</h4>
+            <mat-form-field>
+              <mat-label>Select a Service Type</mat-label>
+              <mat-select>
+                <mat-option>
+                  API
+                </mat-option>
+                <mat-option>
+                  WebSite
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+              <mat-label>Service Url</mat-label>
+              <input matInput placeholder="Enter an available url" required>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Service Description</mat-label>
+              <input matInput placeholder="Enter Description of Service" required>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Servce Name</mat-label>
+              <input matInput placeholder="Endter Name of Service" required>
+            </mat-form-field>
+            <br />
+            <button mat-raised-button color="primary">Submit</button>
+          </div>
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Role">
+        <ng-template matTabContent>
+          <div mat-dialog-content>
+            <mat-form-field>
+              <input matInput placeholder="Role Name" required>
+            </mat-form-field>
+          </div>
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
 </div>
+
